@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <a href="#open" onclick="document.getElementById(`id`).style.display=`block`">open</a>
+        <center>
+        <div id="id" style="display: none;width: 100%;">
+            <form class="search-form" method="post" action="search.php?username='.$_SESSION['username'].'">
+                        <input type="text" class="search-input" name="search" placeholder="جستجوی نام کاربری..."><button class="search-btn" type="submit" name="submit"><i style="color: #3e0081;font-size: 1.6rem" class="fa fa-search" aria-hidden="true"></i></button> 
+                        </form>
+            <br><br>
+            <div style="background-color: rgb(190, 190, 190);width: 30%;padding: 5px 5px 5px 5px;">
+                <img dir="ltr" src="uploads/profile.jpg" style="border: 1px solid black;border-radius: 100%;width: 10%;float: left;">&nbsp;&nbsp;
+                <br>
+                <a dir="ltr" href="profile.php" style="text-decoration: none;color: blue;float: left;">@alz</a>
+                <br><br>
+
+                <p dir="rtl" style="text-align: right;">سلام</p>
+                <p dir="ltr" style="color: white;text-align: left;">2023-08-12</p>
+            </div>
+        </div>
+        </center>
+    </body>
+</html>
